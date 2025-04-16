@@ -9,7 +9,6 @@ A modern, responsive, and interactive portfolio website built with **React**, **
 6. [Components Overview](#components-overview)
 7. [Environment Variables](#environment-variables)
 8. [Contributing](#contributing)
-9. [License](#license)
 
 ## Features
 - **Responsive Design**: Optimized for all screen sizes, from mobile to desktops.
