@@ -17,8 +17,8 @@ const Testimonials = () => {
                                     <img src={testimonial.imgPath} alt={testimonial.name} />
                                 </div>
                                 <div>
-                                    <p className="font-bold">{testimonial.name}</p>
-                                    <p className="text-white-50">{testimonial.mentions}</p>
+                                    <p className="font-bold text-start">{testimonial.name}</p>
+                                    <p className="text-white-50 text-start ">{testimonial.mentions}</p>
                                 </div>
                             </div>
                         </GlowCard>

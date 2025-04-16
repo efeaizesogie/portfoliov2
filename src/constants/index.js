@@ -148,7 +148,7 @@ const techStackIcons = [
 const expCards = [
     {
         review:
-            "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+            "Efe brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
         imgPath: "/images/foxy-lab-exp.png",
         logoPath: "/images/foxy-lab-logo.png",
         title: "Frontend Developer",
@@ -162,7 +162,7 @@ const expCards = [
     },
     {
         review:
-            "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+            "Efe’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
         imgPath: "/images/mercator-exp.png",
         logoPath: "/images/mercatorng_logo.png",
         title: "Frontend Web Developer",
@@ -175,7 +175,7 @@ const expCards = [
     },
     {
         review:
-            "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+            "Efe’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
         imgPath: "/images/phreetech-logo.svg",
         logoPath: "/images/phreetech-logo.png",
         title: "Frontend Developer Intern",
@@ -206,45 +206,45 @@ const expLogos = [
 
 const testimonials = [
     {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
+        name: "Edoki Chukwuyem",
+        mentions: "@chuksdev",
         review:
-            "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+            "Working with Efeosa was a smart decision. He clearly understood our project goals and delivered a seamless website that met all our expectations. He’s very reliable and knows his craft well.",
         imgPath: "/images/client1.png",
     },
     {
         name: "Wade Warren",
         mentions: "@wadewarren",
         review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+            "Efeosa completely transformed our old website into something clean and modern. His attention to detail and design sense really stood out. He’s focused, professional, and easy to work with.",
         imgPath: "/images/client3.png",
     },
     {
         name: "Guy Hawkins",
         mentions: "@guyhawkins",
         review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+            "Efeosa is someone you can count on. Throughout the entire project, he stayed dedicated, communicated well, and always delivered on time. His passion for development shows in the quality of his work.",
         imgPath: "/images/client2.png",
     },
     {
         name: "Marvin McKinney",
         mentions: "@marvinmckinney",
         review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+            "It was a great experience working with Efeosa. He delivered a clean, user-friendly website that our customers find easy to navigate. He brings both technical skills and creative ideas to the table.",
         imgPath: "/images/client5.png",
     },
     {
         name: "Floyd Miles",
         mentions: "@floydmiles",
         review:
-            "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+            "Efeosa is a very skilled web developer. He handled our e-commerce site professionally, and since the launch, we’ve seen a clear improvement in performance and user experience. He’s definitely someone I recommend.",
         imgPath: "/images/client4.png",
     },
     {
         name: "Albert Flores",
         mentions: "@albertflores",
         review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+            "I’m really impressed with the work Efeosa did. He listened, understood our vision, and brought it to life beyond our expectations. He’s good with both frontend and backend development.",
         imgPath: "/images/client6.png",
     },
 ];
