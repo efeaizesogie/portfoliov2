@@ -36,6 +36,9 @@ section {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
+  .touch-auto {
+    touch-action: auto !important;
+  }
 }
 
 @layer components {
@@ -463,10 +466,20 @@ section {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  filter: blur(10px);
-  filter: saturate(200);
+  filter: blur(10px) saturate(200);
 }
 
 .card:hover::before {
   opacity: 1;
+}
+
+/* Fix for 3D model scrolling on mobile */
+@media (max-width: 768px) {
+  canvas {
+    touch-action: pan-y !important;
+  }
+
+  .hero-3d-layout {
+    pointer-events: auto;
+  }
 }

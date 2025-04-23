@@ -80,7 +80,7 @@ const Hero = () => {
                 </header>
 
                 <figure>
-                    <div className="hero-3d-layout z-10">
+                    <div className="hero-3d-layout z-10 touch-auto">
                         <Suspense fallback={<div className="loading-fallback">Loading 3D Experience...</div>}>
                             <HeroExperience />
                         </Suspense>
