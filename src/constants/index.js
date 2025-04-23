@@ -209,35 +209,35 @@ const testimonials = [
         mentions: "@chuksdev",
         review:
             "Working with Efeosa was a smart decision. He clearly understood our project goals and delivered a seamless website that met all our expectations. He’s very reliable and knows his craft well.",
-        imgPath: "/images/avatar.png",
+        imgPath: "/images/user.png",
     },
     {
         name: "Kelechi Eronini",
         mentions: "@k_eronini",
         review:
             "As a teammate, Efeosa is reliable, sharp, and always ready to dive into challenges. He consistently delivers quality work, communicates clearly, and elevates any project he’s on. A real asset to the team!",
-        imgPath: "/images/avatar.png",
+        imgPath: "/images/user.png",
     },
     {
         name: "Gifted Phreetech",
         mentions: "@gifted",
         review:
             "Working with Efeosa as a fellow intern was inspiring. He was always quick to solve problems, share knowledge, and push for clean, efficient code. His focus and energy made every team task smoother and more fun.",
-        imgPath: "/images/avatar.png",
+        imgPath: "/images/user.png",
     },
     {
         name: "Mr Henry",
         mentions: "@honatrix",
         review:
             "It was a great experience working with Efeosa. He delivered a clean, user-friendly website that our customers find easy to navigate. He brings both technical skills and creative ideas to the table.",
-        imgPath: "/images/avatar.png",
+        imgPath: "/images/user.png",
     },
     {
         name: "Godstime Nwabue",
         mentions: "@nwabuegodstime",
         review:
             "Efeosa is a very skilled web developer. He handled our site professionally, and since the launch, we’ve seen a clear improvement in performance and user experience. He’s definitely someone I recommend.",
-        imgPath: "/images/avatar.png",
+        imgPath: "/images/user.png",
     },
 
 ];
