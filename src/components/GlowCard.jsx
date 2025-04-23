@@ -1,9 +1,29 @@
-import React, {useRef} from 'react'
+import React, {useRef, useCallback} from 'react'
 
 const GlowCard = ({ card, children, index }) => {
     const cardRefs = useRef([]);
+    const requestRef = useRef();
+    const mousePositionRef = useRef({ x: 0, y: 0, angle: 0, needsUpdate: false });
 
-    const handleMouseMove = (index) => (e) => {
+    // Throttle mouse move updates using requestAnimationFrame
+    const updateCardStyle = useCallback(() => {
+        if (mousePositionRef.current.needsUpdate) {
+            const card = cardRefs.current[index];
+            if (card) {
+                card.style.setProperty('--start', mousePositionRef.current.angle + 60);
+            }
+            mousePositionRef.current.needsUpdate = false;
+        }
+        requestRef.current = requestAnimationFrame(updateCardStyle);
+    }, [index]);
+
+    // Start the animation loop when component mounts
+    React.useEffect(() => {
+        requestRef.current = requestAnimationFrame(updateCardStyle);
+        return () => cancelAnimationFrame(requestRef.current);
+    }, [updateCardStyle]);
+
+    const handleMouseMove = useCallback((index) => (e) => {
         const card = cardRefs.current[index];
         if (!card) return;
 
@@ -12,11 +32,15 @@ const GlowCard = ({ card, children, index }) => {
         const mouseY = e.clientY - rect.top - rect.height / 2;
 
         let angle = Math.atan2(mouseY, mouseX) * (180/ Math.PI);
+        angle = (angle + 360) % 360;
 
-        angle = (angle + 360 ) % 360;
-
-        card.style.setProperty('--start', angle + 60);
-    }
+        mousePositionRef.current = {
+            x: mouseX,
+            y: mouseY,
+            angle: angle,
+            needsUpdate: true
+        };
+    }, []);
     return (
         <div ref={(el) => (cardRefs.current[index] = el)} onMouseMove={handleMouseMove(index)} className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column">
             <div className="glow"/>

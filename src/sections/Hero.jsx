@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import {words} from "../constants/index.js";
 import Button from "../components/Button.jsx";
-import HeroExperience from "../components/models/hero-models/HeroExperience.jsx";
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap"
 
+// Lazy load the 3D component to improve initial load time
+const HeroExperience = lazy(() => import("../components/models/hero-models/HeroExperience.jsx"));
+
 const Hero = () => {
 
     useGSAP(() => {
-        gsap.fromTo(
+        // Batch animations to reduce layout thrashing
+        const tl = gsap.timeline({
+            defaults: {
+                ease: "power1.inOut",
+            }
+        });
+
+        tl.fromTo(
             ".hero-text h1",
             {
                 y: 50, opacity: 0,
@@ -17,13 +26,10 @@ const Hero = () => {
             {
                 y: 0,
                 opacity: 1,
-                duration: 1,
-                stagger: 0.2,
-                ease: "power1.inOut"
+                duration: 0.8, // Slightly reduced duration
+                stagger: 0.15, // Slightly reduced stagger
             }
-        )
-
-        gsap.fromTo(
+        ).fromTo(
             ".intro-text",
             {
                 y: 50, opacity: 0,
@@ -31,10 +37,11 @@ const Hero = () => {
             {
                 y: 0,
                 opacity: 1,
-                duration: 1.2,
-            }
+                duration: 0.8, // Slightly reduced duration
+            },
+            "-=0.4" // Overlap with previous animation
         )
-    })
+    }, [])
 
     return (
         <section id="hero" className="relative overflow-hidden">
@@ -72,9 +79,11 @@ const Hero = () => {
                     </div>
                 </header>
 
-                <figure >
+                <figure>
                     <div className="hero-3d-layout">
-                        <HeroExperience />
+                        <Suspense fallback={<div className="loading-fallback">Loading 3D Experience...</div>}>
+                            <HeroExperience />
+                        </Suspense>
                     </div>
                 </figure>
             </div>

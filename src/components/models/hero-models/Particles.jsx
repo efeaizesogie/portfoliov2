@@ -1,8 +1,9 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 
-const Particles = ({ count = 200 }) => {
+const Particles = ({ count = 50 }) => { // Reduced particle count from 200 to 50
     const mesh = useRef();
+    const frameSkip = useRef(0);
 
     const particles = useMemo(() => {
         const temp = [];
@@ -20,6 +21,10 @@ const Particles = ({ count = 200 }) => {
     }, [count]);
 
     useFrame(() => {
+        // Only update every 2 frames to reduce CPU usage
+        frameSkip.current = (frameSkip.current + 1) % 2;
+        if (frameSkip.current !== 0) return;
+
         const positions = mesh.current.geometry.attributes.position.array;
         for (let i = 0; i < count; i++) {
             let y = positions[i * 3 + 1];
@@ -50,7 +55,7 @@ const Particles = ({ count = 200 }) => {
             <pointsMaterial
                 color="#ffffff"
                 size={0.05}
-                transparent
+                transparent={true}
                 opacity={0.9}
                 depthWrite={false}
             />

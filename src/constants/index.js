@@ -148,7 +148,7 @@ const techStackIcons = [
 const expCards = [
     {
         review:
-            "Efe brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+            "Efeosa collaborated with us on several projects at Foxy Labs, consistently delivering work of exceptional quality and attention to detail. He met all his targets on time and demonstrated a strong sense of responsibility. His proactive approach made him a valuable contributor to our team.",
         imgPath: "/images/foxy-lab-exp.png",
         logoPath: "/images/foxy-lab-logo.png",
         title: "Frontend Developer",
@@ -161,8 +161,7 @@ const expCards = [
         ],
     },
     {
-        review:
-            "Efe’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+        review: "Efe brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
         imgPath: "/images/mercator-exp.png",
         logoPath: "/images/mercatorng_logo.png",
         title: "Frontend Web Developer",
@@ -175,7 +174,7 @@ const expCards = [
     },
     {
         review:
-            "Efe’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+            "",
         imgPath: "/images/phreetech-logo.svg",
         logoPath: "/images/phreetech-logo.png",
         title: "Frontend Developer Intern",
@@ -210,43 +209,37 @@ const testimonials = [
         mentions: "@chuksdev",
         review:
             "Working with Efeosa was a smart decision. He clearly understood our project goals and delivered a seamless website that met all our expectations. He’s very reliable and knows his craft well.",
-        imgPath: "/images/client1.png",
+        imgPath: "/images/avatar.png",
     },
     {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
+        name: "Kelechi Eronini",
+        mentions: "@k_eronini",
         review:
-            "Efeosa completely transformed our old website into something clean and modern. His attention to detail and design sense really stood out. He’s focused, professional, and easy to work with.",
-        imgPath: "/images/client3.png",
+            "As a teammate, Efeosa is reliable, sharp, and always ready to dive into challenges. He consistently delivers quality work, communicates clearly, and elevates any project he’s on. A real asset to the team!",
+        imgPath: "/images/avatar.png",
     },
     {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
+        name: "Gifted Phreetech",
+        mentions: "@gifted",
         review:
-            "Efeosa is someone you can count on. Throughout the entire project, he stayed dedicated, communicated well, and always delivered on time. His passion for development shows in the quality of his work.",
-        imgPath: "/images/client2.png",
+            "Working with Efeosa as a fellow intern was inspiring. He was always quick to solve problems, share knowledge, and push for clean, efficient code. His focus and energy made every team task smoother and more fun.",
+        imgPath: "/images/avatar.png",
     },
     {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
+        name: "Mr Henry",
+        mentions: "@honatrix",
         review:
             "It was a great experience working with Efeosa. He delivered a clean, user-friendly website that our customers find easy to navigate. He brings both technical skills and creative ideas to the table.",
-        imgPath: "/images/client5.png",
+        imgPath: "/images/avatar.png",
     },
     {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
+        name: "Godstime Nwabue",
+        mentions: "@nwabuegodstime",
         review:
-            "Efeosa is a very skilled web developer. He handled our e-commerce site professionally, and since the launch, we’ve seen a clear improvement in performance and user experience. He’s definitely someone I recommend.",
-        imgPath: "/images/client4.png",
+            "Efeosa is a very skilled web developer. He handled our site professionally, and since the launch, we’ve seen a clear improvement in performance and user experience. He’s definitely someone I recommend.",
+        imgPath: "/images/avatar.png",
     },
-    {
-        name: "Albert Flores",
-        mentions: "@albertflores",
-        review:
-            "I’m really impressed with the work Efeosa did. He listened, understood our vision, and brought it to life beyond our expectations. He’s good with both frontend and backend development.",
-        imgPath: "/images/client6.png",
-    },
+
 ];
 
 const socialImgs = [
